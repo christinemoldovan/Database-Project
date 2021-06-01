@@ -1,0 +1,39 @@
+<html>
+<style>
+body, html {
+    height: 100%;
+  margin: 0;
+  font-family: 'IBM Plex Sans';
+}
+body{
+	background-image: url(img/doctor.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;"
+}
+</style>
+<body>
+<p> &nbsp&nbsp&nbsp </p>
+<form method=POST action="updatethispacientpage.php">
+
+Pacient last name: <input type="text" name="pac_lname"></input><br>
+Pacient first name: <input type="text" name="pac_fname"></input><br>
+Pacient contact: <input type="tel" name="pac_cont"></input><br>
+Pacient gender: <select name="pac_gen">
+<option name="female" value="Female">
+Female
+</option>
+<option name="male" value="Male">
+Male
+</option>
+</select>
+
+<br><input type="submit" name="OK" value="OK"></input>
+</form>
+</body>
+</html>

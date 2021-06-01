@@ -1,0 +1,35 @@
+<html>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+   font-family: 'IBM Plex Sans';
+}
+body {
+	background-image: url(img/new.jpg);
+	opacity: 1.0;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;
+}
+</style>
+<body>
+<p> &nbsp&nbsp&nbsp </p>
+<form method=POST action="updateseldoctorpage.php">
+<!-- Enter username for verification: <input type="text" name="docs_user"></input><br>
+Enter password for verification: <input type="text" name="docs_pass"></input><br> -->
+Doctor email: <input type="text" name="docs_email"></input><br>
+
+Doctor fees: <input type="number" name="docs_fees" min="300" max="3000" step="50"></input><br>
+Doctor last name: <input type="text" name="docs_lname"></input><br>
+Doctor first name: <input type="text" name="docs_fname"></input><br>
+
+<br><input type="submit" name="OK" value="OK"></input>
+</form>
+</body>
+</html>

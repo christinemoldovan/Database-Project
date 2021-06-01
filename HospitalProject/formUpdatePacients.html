@@ -1,0 +1,44 @@
+<html>
+<style>
+body, html {
+   height: 100%;
+  margin: 0;
+  font-family: 'IBM Plex Sans';
+}
+body {
+	background-image: url(img/admin.jpg);
+	opacity: 1.0;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;
+}
+</style>
+<body>
+<p> &nbsp&nbsp&nbsp </p>
+<form method=POST action="updatepacientpage.php">
+Pacient's id for which to update data:<input type="number" name="pat_id"></input><br>
+Update pacient last name: <input type="text" name="pac_lname"></input><br>
+Update pacient first name: <input type="text" name="pac_fname"></input><br>
+Update pacient password: <input type="text" name="pac_pass1"></input><br>
+Update pacient verify password: <input type="text" name="pac_pass2"></input><br>
+Update pacient email: <input type="text" name="pac_email"></input><br>
+Update pacient contact: <input type="tel" name="pac_cont"></input><br>
+Update pacient gender: <select name="pac_gen">
+<option name="female" value="Female">
+Female
+</option>
+<option name="male" value="Male">
+Male
+</option>
+</select>
+
+
+<br><input type="submit" name="OK" value="OK"></input>
+</form>
+</body>
+</html>
